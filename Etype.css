@@ -1,0 +1,348 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CUERPO GENERAL */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* ENCABEZADO */
+header {
+    background-color: #1f2933;
+    color: white;
+    padding: 20px 40px;
+}
+
+header h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #38bdf8;
+}
+
+/* CONTENIDO */
+main {
+    padding: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* TÍTULOS */
+h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+/* TEXTO */
+p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/* TARJETAS DE SERVICIOS */
+.servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.servicio {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 6px solid #2563eb;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.servicio h4 {
+    margin-bottom: 10px;
+    color: #1f2933;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background-color: #1f2933;
+    color: #d1d5db;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+.imagen-portada {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+/* CONTACTO */
+.contacto {
+    padding: 50px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.contacto h2 {
+    text-align: center;
+    color: #0f2a44;
+    margin-bottom: 10px;
+}
+
+.contacto p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.formulario textarea {
+    resize: none;
+    height: 120px;
+}
+
+.formulario button {
+    background-color: #1f6fb2;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #155a90;
+}
+/* NOSOTROS */
+.hero-nosotros {
+    background: linear-gradient(rgba(15,42,68,0.8), rgba(15,42,68,0.8)),
+                url("../img/Artes graficas.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-nosotros h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-nosotros p {
+    font-size: 18px;
+}
+
+.nosotros-seccion {
+    padding: 50px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.nosotros-seccion h3 {
+    color: #0f2a44;
+    margin-bottom: 15px;
+}
+
+.mision-vision {
+    display: flex;
+    gap: 30px;
+    padding: 40px 60px;
+    background-color: #f4f4f4;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card h3 {
+    color: #0f2a44;
+    margin-bottom: 10px;
+}
+
+.valores {
+    padding: 50px;
+    text-align: center;
+}
+
+.valores h3 {
+    margin-bottom: 25px;
+    color: #0f2a44;
+}
+
+.valores-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.valor {
+    background-color: #1f6fb2;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* RESPONSIVE NOSOTROS */
+@media (max-width: 768px) {
+    .mision-vision {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+.btn-color {
+    background-color: #1f2a35;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f2a35;
+    padding: 20px 40px;
+}
+
+.header h1 {
+    color: white;
+    font-size: 22px;
+    margin: 0 0 10px 0;
+}
+
+.header nav a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.header nav a:hover {
+    text-decoration: underline;
+}
+.header-der {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-der img {
+    max-height: 100%;
+    width: auto;
+}
+/* ===== AJUSTE DEL LOGO EN EL HEADER ===== */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f2a35;
+    padding: 20px 40px;
+    height: 120px;
+}
+
+.header-der {
+    display: flex;
+    align-items: center;
+}
+
+.header-der img {
+    height: 100px;
+    max-width: 180px;
+    object-fit: contain;
+}
+.header-der {
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+.logo {
+  border-radius: 20px; /* ajusta el número si lo quieres más o menos redondo */
+}
+/* ===== HEADER CON LOGO CENTRADO ===== */
+.header-centro {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+}
+
+.header-centro .logo {
+    height: 120px;
+    max-width: 320px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+
+.header-centro nav a {
+    margin: 0 15px;
+}
